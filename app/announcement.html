@@ -14,7 +14,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__inner">
       <div class="header__menu">
         <a class="header__logo" href="index.html">
@@ -25,7 +25,7 @@
       <div class="header__item">
         <ul class="menu">
           <li class="menu__item">
-            <a class="menu__link" href="#">
+            <a class="menu__link" href="index.html">
               о проекте
             </a>
           </li>
@@ -45,17 +45,17 @@
   <div class="header-banner banner"></div>
 
   <main class="main">
-    <a class="arrow-top" href="#"></a>
+    <a class="arrow-top" href="#header"></a>
 
     <section class="form-tables">
       <div class="container">
 
-        <div class="form__descr">
-          <div class="form__descr-box">
-            <img class="form__descr-img" src="images/icons/desc.svg" alt="">
+        <div class="form-tables__descr">
+          <div class="form-tables__descr-box">
+            <img class="form-tables__descr-img" src="images/icons/desc.svg" alt="">
           </div>
 
-          <p class="form__text">
+          <p class="form-tables__text">
             Заполните все поля формы на размещение своего объявления на сайте. <br>
             Размещение объявления платное. Стоимость за одно объявление составляет 990 руб. <br>
             Объявление будет опубликовано на сайте после оплаты и проверки модератором.
@@ -118,7 +118,7 @@
             <p class="form-info__descr">цены</p>
           </div>
 
-          <div>
+          <div class="form-description__wraper">
 
             <div class="form-description">
               <div class="form-description__container">
@@ -198,8 +198,8 @@
                 <span class="form-description__text">услуги не оказываю</span>
               </label>
             </div>
-
           </div>
+
 
           <div class="form-info">
             <p class="form-info__descr">фото</p>
@@ -208,11 +208,10 @@
 
           <div class="form__container">
             <label class="form__label" for="name">Прикрепите фотографию к объявлению</label>
-            <button class="button">загрузить</button>
-            <!-- <input class="button" type="file" name="photo[]" multiple="" accept="image/*,image/jpeg"> -->
+            <button class="form__container-btn">загрузить</button>
           </div>
 
-          <div class="agreement">
+          <div class="form-description__wrap">
 
             <label class="form-description__inner">
               <div class="form-description__box">
@@ -263,7 +262,7 @@
     </div>
   </footer>
 
-
+  <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>
